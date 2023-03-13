@@ -1,6 +1,7 @@
 
 package com.proyecto.portfolio.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -26,15 +27,17 @@ public class PersonalSkill implements Serializable{
     @Column(name = "nivel")
     private int nivel;
     @Column(name = "fechaAlta")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaAlta;
     @Column(name = "fechaBaja")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaBaja;
     @Column(name = "estado")
     private String estado;
     
     @OneToMany(mappedBy = "personalSkill", cascade = CascadeType.ALL)
     @JsonIgnoreProperties(value = "personalSkill", allowSetters = true)
-    private List<DetallePersonalSkill> listaPersonalSkills;
+    private List<DetallePersonalSkill> listaPersonalSkill;
     
     
     public PersonalSkill() {
@@ -105,12 +108,12 @@ public class PersonalSkill implements Serializable{
         this.estado = estado;
     }
 
-    public List<DetallePersonalSkill> getListaPersonalSkills() {
-        return listaPersonalSkills;
+    public List<DetallePersonalSkill> getListaPersonalSkill() {
+        return listaPersonalSkill;
     }
 
-    public void setListaPersonalSkills(List<DetallePersonalSkill> listaPersonalSkills) {
-        this.listaPersonalSkills = listaPersonalSkills;
+    public void setListaPersonalSkill(List<DetallePersonalSkill> listaPersonalSkill) {
+        this.listaPersonalSkill = listaPersonalSkill;
     }
 
    

@@ -1,6 +1,7 @@
 
 package com.proyecto.portfolio.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -25,8 +26,10 @@ public class Imagen implements Serializable{
     @Column(name = "ruta")
     private String ruta;
     @Column(name = "fechaAlta")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaAlta;
     @Column(name = "fechaBaja")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaBaja;
     @Column(name = "estado")
     private String estado;

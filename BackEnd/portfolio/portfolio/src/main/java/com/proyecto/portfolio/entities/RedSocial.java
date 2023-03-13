@@ -1,6 +1,7 @@
 
 package com.proyecto.portfolio.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -25,8 +26,10 @@ public class RedSocial implements Serializable {
     @Column(name = "link")
     private String link;
     @Column(name = "fechaAlta")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaAlta;
     @Column(name = "fechaBaja")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaBaja;
     @Column(name = "estado")
     private String estado;
@@ -104,6 +107,15 @@ public class RedSocial implements Serializable {
         this.estado = estado;
     }
 
+    public Persona getPersona() {
+        return persona;
+    }
+
+    public void setPersona(Persona persona) {
+        this.persona = persona;
+    }
+    
+   
     @Override
     public String toString() {
         return "id: " + id + "\nnombre: " + nombre + "\nlink: " + link + "\nfechaAlta: " + fechaAlta 

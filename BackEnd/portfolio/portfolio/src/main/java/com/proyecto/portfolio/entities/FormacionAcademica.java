@@ -1,6 +1,7 @@
 
 package com.proyecto.portfolio.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -27,12 +28,16 @@ public class FormacionAcademica implements Serializable {
     @Column(name = "descripcion")
     private String descripcion;
     @Column(name = "fechaInicio")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaInicio;
     @Column(name = "fechaFin")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaFin;
     @Column(name = "fechaAlta")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaAlta;
     @Column(name = "fechaBaja")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaBaja;
     @Column(name = "estado")
     private String estado;

@@ -1,6 +1,7 @@
 
 package com.proyecto.portfolio.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -32,6 +33,7 @@ public class Persona implements Serializable {
     @Column(name = "cuil", unique = true)
     private String cuil;
     @Column(name = "fechaNac")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaNac;
     @Column(name = "telefono")
     private String telefono;
@@ -42,8 +44,10 @@ public class Persona implements Serializable {
     @Column(name = "perfil")
     private String perfil;
     @Column(name = "fechaAlta")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaAlta;
     @Column(name = "fechaBaja")
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
     private LocalDate fechaBaja;
     @Column(name = "estado")
     private String estado;
@@ -74,7 +78,7 @@ public class Persona implements Serializable {
     
     @OneToMany(mappedBy = "persona", cascade = CascadeType.ALL)
     @JsonIgnoreProperties(value = "persona", allowSetters = true)
-    private List<DetallePersonalSkill> listaPersonalSkills;
+    private List<DetallePersonalSkill> listaPersonalSkill;
     
     @OneToMany(mappedBy = "persona", cascade = CascadeType.ALL)
     @JsonIgnoreProperties(value = "persona", allowSetters = true)
@@ -274,12 +278,12 @@ public class Persona implements Serializable {
         this.listaProSkill = listaProSkill;
     }
 
-    public List<DetallePersonalSkill> getListaPersonalSkills() {
-        return listaPersonalSkills;
+    public List<DetallePersonalSkill> getListaPersonalSkill() {
+        return listaPersonalSkill;
     }
 
-    public void setListaPersonalSkills(List<DetallePersonalSkill> listaPersonalSkills) {
-        this.listaPersonalSkills = listaPersonalSkills;
+    public void setListaPersonalSkill(List<DetallePersonalSkill> listaPersonalSkill) {
+        this.listaPersonalSkill = listaPersonalSkill;
     }
 
     public List<FormacionAcademica> getListaFormacionAcademica() {
