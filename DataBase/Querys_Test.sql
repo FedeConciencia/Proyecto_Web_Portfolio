@@ -6,6 +6,11 @@ use proyecto_portfolio;
 
 #---------------------------------------
 
+#Query Nativo para obtener por Id_Persona Experiencia_Laboral =>
+Select ex.* from experiencia_laboral as ex inner join persona as p on ex.id_persona = p.id;
+
+#---------------------------------------
+
 #ENTIDAD Persona  =>
 
 SELECT * FROM persona;

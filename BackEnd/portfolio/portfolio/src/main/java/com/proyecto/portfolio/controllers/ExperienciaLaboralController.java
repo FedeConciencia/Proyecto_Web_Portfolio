@@ -100,4 +100,19 @@ public class ExperienciaLaboralController {
         
     }
     
+    @GetMapping("/{id}/experiencias")
+    public ResponseEntity<?> getAllExperiencia(@PathVariable Long id){
+        
+        try{
+            
+            return ResponseEntity.status(HttpStatus.OK).body(expLabService.buscarExperiencia(id));
+            
+        }catch(Exception e){
+            
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por Favor intente mas tarde.\"}" + e.getMessage());
+            
+        }
+         
+    }
+    
 }

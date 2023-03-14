@@ -117,4 +117,21 @@ public class ExperienciaLaboralService implements BaseService<ExperienciaLaboral
         
     }
     
+    @Transactional
+    public List<ExperienciaLaboral> buscarExperiencia(Long id) throws Exception{
+        
+        try{
+            
+            List<ExperienciaLaboral> lista = expeLabRepo.searchExperiencia(id);
+            
+            return lista;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

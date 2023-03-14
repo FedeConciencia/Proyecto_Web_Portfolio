@@ -1,6 +1,7 @@
 
 package com.proyecto.portfolio.services;
 
+
 import com.proyecto.portfolio.entities.Persona;
 import com.proyecto.portfolio.repositories.PersonaRepository;
 import java.util.List;
@@ -116,5 +117,7 @@ public class PersonaService implements BaseService<Persona> {
         }
         
     }
+    
+    
     
 }
