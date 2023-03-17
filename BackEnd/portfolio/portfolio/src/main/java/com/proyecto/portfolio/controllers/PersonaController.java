@@ -32,6 +32,7 @@ public class PersonaController {
             
         }catch(Exception e){
             
+    
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por Favor intente mas tarde.\"}");
             
         }
@@ -47,7 +48,9 @@ public class PersonaController {
             
         }catch(Exception e){
             
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por Favor intente mas tarde.\"}");
+            
+            
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por Favor intente mas tarde.\"}" + e.getMessage());
             
         }
         
