@@ -1,2379 +1,2663 @@
 {
 	"info": {
-		"_postman_id": "7cea2092-c1ca-4f59-81db-63976d092eba",
+		"_postman_id": "ab41f4d8-a6e1-4791-baa2-36a22c8a541f",
 		"name": "Proyecto_Portfolio",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Create Persona",
-			"event": [
+			"name": "Persona",
+			"item": [
 				{
-					"listen": "prerequest",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"Federico\",\r\n    \"apellido\":\"Sabatini\",\r\n    \"cuil\":\"24310290204\",\r\n    \"dni\":\"31029020\",\r\n    \"email\":\"federicosabatini@gmail.com\",\r\n    \"telefono\":\"2616595344\",\r\n    \"fechaNac\":\"1984-09-03\",\r\n    \"titulo\":\"Tecnico Superior en Programacion\",\r\n    \"perfil\":\"Soy una persona apasionada por la tecnologia, buscando una oportunidad en el rubro de TI\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Create Persona",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/persona/",
-					"host": [
-						"localhost"
 					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"persona",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll Persona",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"Federico\",\r\n    \"apellido\":\"Sabatini\",\r\n    \"cuil\":\"24310290204\",\r\n    \"dni\":\"31029020\",\r\n    \"email\":\"federicosabatini@gmail.com\",\r\n    \"telefono\":\"2616595344\",\r\n    \"fechaNac\":\"1984-09-03\",\r\n    \"titulo\":\"Tecnico Superior en Programacion\",\r\n    \"perfil\":\"Soy una persona apasionada por la tecnologia, buscando una oportunidad en el rubro de TI\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/persona/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"persona",
+								""
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "prerequest",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"Federico\",\r\n    \"apellido\":\"Sabatini\",\r\n    \"cuil\":\"24310290204\",\r\n    \"dni\":\"31029020\",\r\n    \"email\":\"federicosabatini@gmail.com\",\r\n    \"telefono\":\"2616595344\",\r\n    \"fechaNac\":\"1984-09-03\",\r\n    \"titulo\":\"Tecnico Superior en Programacion\",\r\n    \"perfil\":\"Soy una persona apasionada por la tecnologia, buscando una oportunidad en el rubro de TI\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "GetAll Persona",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/persona/",
-					"host": [
-						"localhost"
 					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"persona",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne Persona",
-			"event": [
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"Federico\",\r\n    \"apellido\":\"Sabatini\",\r\n    \"cuil\":\"24310290204\",\r\n    \"dni\":\"31029020\",\r\n    \"email\":\"federicosabatini@gmail.com\",\r\n    \"telefono\":\"2616595344\",\r\n    \"fechaNac\":\"1984-09-03\",\r\n    \"titulo\":\"Tecnico Superior en Programacion\",\r\n    \"perfil\":\"Soy una persona apasionada por la tecnologia, buscando una oportunidad en el rubro de TI\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/persona/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"persona",
+								""
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "prerequest",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"Federico\",\r\n    \"apellido\":\"Sabatini\",\r\n    \"cuil\":\"24310290204\",\r\n    \"dni\":\"31029020\",\r\n    \"email\":\"federicosabatini@gmail.com\",\r\n    \"telefono\":\"2616595344\",\r\n    \"fechaNac\":\"1984-09-03\",\r\n    \"titulo\":\"Tecnico Superior en Programacion\",\r\n    \"perfil\":\"Soy una persona apasionada por la tecnologia, buscando una oportunidad en el rubro de TI\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "GetOne Persona",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/persona/1",
-					"host": [
-						"localhost"
 					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"persona",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Persona",
-			"event": [
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"Federico\",\r\n    \"apellido\":\"Sabatini\",\r\n    \"cuil\":\"24310290204\",\r\n    \"dni\":\"31029020\",\r\n    \"email\":\"federicosabatini@gmail.com\",\r\n    \"telefono\":\"2616595344\",\r\n    \"fechaNac\":\"1984-09-03\",\r\n    \"titulo\":\"Tecnico Superior en Programacion\",\r\n    \"perfil\":\"Soy una persona apasionada por la tecnologia, buscando una oportunidad en el rubro de TI\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/persona/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"persona",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "prerequest",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"Maria\",\r\n    \"apellido\":\"Casale\",\r\n    \"cuil\":\"24306719324\",\r\n    \"dni\":\"30671932\",\r\n    \"email\":\"agustinacasale2@gmail.com\",\r\n    \"telefono\":\"2615386644\",\r\n    \"fechaNac\":\"1984-04-12\",\r\n    \"titulo\":\"Tecnico Superior en Hoteleria\",\r\n    \"perfil\":\"Me encuentro en  busqueda laboral dentro del rubro de la hoteleria\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Update Persona",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/persona/1",
-					"host": [
-						"localhost"
 					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"persona",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Persona",
-			"event": [
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"Maria\",\r\n    \"apellido\":\"Casale\",\r\n    \"cuil\":\"24306719324\",\r\n    \"dni\":\"30671932\",\r\n    \"email\":\"agustinacasale2@gmail.com\",\r\n    \"telefono\":\"2615386644\",\r\n    \"fechaNac\":\"1984-04-12\",\r\n    \"titulo\":\"Tecnico Superior en Hoteleria\",\r\n    \"perfil\":\"Me encuentro en  busqueda laboral dentro del rubro de la hoteleria\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/persona/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"persona",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "prerequest",
-					"script": {
-						"exec": [
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"Maria\",\r\n    \"apellido\":\"Casale\",\r\n    \"cuil\":\"24306719324\",\r\n    \"dni\":\"30671932\",\r\n    \"email\":\"agustinacasale2@gmail.com\",\r\n    \"telefono\":\"2615386644\",\r\n    \"fechaNac\":\"1984-04-12\",\r\n    \"titulo\":\"Tecnico Superior en Hoteleria\",\r\n    \"perfil\":\"Me encuentro en  busqueda laboral dentro del rubro de la hoteleria\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/persona/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"persona",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Usuario",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"user\":\"fsabatini\",\r\n    \"password\":\"1254231\",\r\n    \"rol\":\"usuario\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/usuario",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"usuario"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll Usuario",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/v1/usuario/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"usuario",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne Usuario",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/v1/usuario/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"usuario",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Usuario",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "    \r\n   { \r\n\r\n        \"id\":1,\r\n        \"user\":\"acasale\",\r\n        \"password\":\"33333\",\r\n        \"rol\":\"usuarios\",\r\n        \"fechaAlta\":\"2023-03-13\",\r\n        \"fechaBaja\":\"1900-01-01\",\r\n        \"estado\":\"activo\",\r\n        \"persona\":{\r\n\r\n            \"id\":1\r\n\r\n        }\r\n\r\n   }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/usuario/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"usuario",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Usuario",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "    \r\n   { \r\n\r\n        \"id\":1,\r\n        \"user\":\"acasale\",\r\n        \"password\":\"33333\",\r\n        \"rol\":\"usuarios\",\r\n        \"fechaAlta\":\"2023-03-13\",\r\n        \"fechaBaja\":\"1900-01-01\",\r\n        \"estado\":\"activo\",\r\n        \"persona\":{\r\n\r\n            \"id\":1\r\n\r\n        }\r\n\r\n   }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/usuario/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"usuario",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Domicilio",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"calle\":\"25 de mayo\",\r\n    \"numero\":\"652\",\r\n    \"localidad\":\"ciudad\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/domicilio/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"domicilio",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll Domicilio",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"calle\":\"25 de mayo\",\r\n    \"numero\":\"652\",\r\n    \"localidad\":\"ciudad\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/domicilio/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"domicilio",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne Domicilio",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"calle\":\"25 de mayo\",\r\n    \"numero\":\"652\",\r\n    \"localidad\":\"ciudad\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/domicilio/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"domicilio",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Domicilio",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"calle\":\"Martin Rodriguez\",\r\n    \"numero\":\"50\",\r\n    \"localidad\":\"Guaymallen\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/domicilio/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"domicilio",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Domicilio",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"calle\":\"Martin Rodriguez\",\r\n    \"numero\":\"50\",\r\n    \"localidad\":\"Guaymallen\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/domicilio/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"domicilio",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Imagen",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"fotoPerfil\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\\\\Proyecto_Web_Portfolio\\\\Documents\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/imagen/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"imagen",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll Imagen",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"fotoPerfil\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\\\\Proyecto_Web_Portfolio\\\\Documents\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/imagen/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"imagen",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne Imagen",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"fotoPerfil\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\\\\Proyecto_Web_Portfolio\\\\Documents\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/imagen/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"imagen",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Imagen",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"fotoPortada\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/imagen/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"imagen",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Imagen",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"fotoPortada\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/imagen/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"imagen",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create RedSocial",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"github\",\r\n    \"link\":\"https://github.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/redSocial/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"redSocial",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll RedSocial",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"github\",\r\n    \"link\":\"https://github.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/redSocial/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"redSocial",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne RedSocial",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"github\",\r\n    \"link\":\"https://github.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/redSocial/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"redSocial",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update RedSocial",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"linkedin\",\r\n    \"link\":\"https://linkedin.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/redSocial/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"redSocial",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete RedSocial",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"linkedin\",\r\n    \"link\":\"https://linkedin.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/redSocial/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"redSocial",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Idioma",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"ingles\",\r\n    \"nivel\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/idioma/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"idioma",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll Idioma",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"ingles\",\r\n    \"nivel\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/idioma/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"idioma",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne Idioma",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"ingles\",\r\n    \"nivel\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/idioma/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"idioma",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Idioma",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"Frances\",\r\n    \"nivel\":4,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/idioma/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"idioma",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Idioma",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/Idioma/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"Idioma",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create DetalleIdioma",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleIdioma/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleIdioma",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll DetalleIdioma",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleIdioma/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleIdioma",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne DetalleIdioma",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleIdioma/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleIdioma",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update DetalleIdioma",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleIdioma/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleIdioma",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete DetalleIdioma",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleIdioma/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleIdioma",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create ProSkill",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"Java\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/proSkill/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"proSkill",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll ProSkill",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"Java\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/proSkill/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"proSkill",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne ProSkill",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"Java\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/proSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"proSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update ProSkill",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"JavaScript\",\r\n    \"nivel\":4,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/proSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"proSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete ProSkill",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/proSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"proSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create DetalleProSkill",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleProSkill/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleProSkill",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll DetalleProSkill",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleProSkill/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleProSkill",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne DetalleProSkill",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleProSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleProSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update DetalleProSkill",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleProSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleProSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete DetalleProSkill",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detalleProSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detalleProSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create PersonalSkill",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"trabajo en equipo\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/personalSkill/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"personalSkill",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll PersonalSkill",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"trabajo en equipo\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/personalSkill/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"personalSkill",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne PersonalSkill",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"nombre\":\"trabajo en equipo\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/personalSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"personalSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update PersonalSkill",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"desarollo\",\r\n    \"nivel\":2,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/personalSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"personalSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete PersonalSkill",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"desarollo\",\r\n    \"nivel\":2,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/personalSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"personalSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create DetallePersonalSkill",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detallePersSkill/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detallePersSkill",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll DetallePersonalSkill",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detallePersSkill/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detallePersSkill",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne DetallePersonalSkill",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detallePersSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detallePersSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update DetallePersonalSkill",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detallePersSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detallePersSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete DetallePersonalSkill",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/detallePersSkill/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"detallePersSkill",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create FormacionAcademica",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formacademic/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formacademic",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll FormacionAcademica",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formAcademic/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formAcademic",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne FormacionAcademica",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formAcademic/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formAcademic",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update FormacionAcademica",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formAcademic/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formAcademic",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete FormacionAcademica",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formAcademic/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formAcademic",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create FormacionComplementaria",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n\r\n    \"institucion\":\"Curso Full Stack Web\",\r\n    \"titulo\":\"Full Stack Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo full stack\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formComplement/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formComplement",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll FormacionComplementaria",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n\r\n    \"institucion\":\"Curso Full Stack Web\",\r\n    \"titulo\":\"Full Stack Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo full stack\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formComplement/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formComplement",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne FormacionComplementaria",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n\r\n    \"institucion\":\"Curso Full Stack Web\",\r\n    \"titulo\":\"Full Stack Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo full stack\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formComplement/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formComplement",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update FormacionComplementaria",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"institucion\":\"Curso Css\",\r\n    \"titulo\":\"Css Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo css\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formComplement/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formComplement",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete FormacionComplementaria",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"institucion\":\"Curso Css\",\r\n    \"titulo\":\"Css Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo css\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/formComplement/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"formComplement",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create ExperienciaLaboral",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"empresa\":\"Eci Emergencias Medicas\",\r\n    \"puesto\":\"Comercial\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/expLaboral/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"expLaboral",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll ExperienciaLaboral",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"empresa\":\"Eci Emergencias Medicas\",\r\n    \"puesto\":\"Comercial\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/expLaboral/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"expLaboral",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne ExperienciaLaboral",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \r\n    \"empresa\":\"Eci Emergencias Medicas\",\r\n    \"puesto\":\"Comercial\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/expLaboral/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"expLaboral",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update ExperienciaLaboral",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"empresa\":\"IPC Piscinas\",\r\n    \"puesto\":\"Atencion al Cliente\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/expLaboral/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"expLaboral",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete ExperienciaLaboral",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"empresa\":\"IPC Piscinas\",\r\n    \"puesto\":\"Atencion al Cliente\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/expLaboral/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"expLaboral",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create DescripcionLaboral",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n\r\n    \"descripcion\":\"Desarrollo Full Stack Web\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/descripcionLab/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"descripcionLab",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetAll DescripcionLaboral",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n\r\n    \"descripcion\":\"Desarrollo Full Stack Web\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/descripcionLab/",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"descripcionLab",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetOne DescripcionLaboral",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n\r\n    \"descripcion\":\"Desarrollo Full Stack Web\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/descripcionLab/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"descripcionLab",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update DescripcionLaboral",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"descripcion\":\"Venta directa de items\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/descripcionLab/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"descripcionLab",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete DescripcionLaboral",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n    \"id\":1,\r\n    \"descripcion\":\"Venta directa de items\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8080/api/v1/descripcionLab/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"descripcionLab",
-						"1"
-					]
-				}
-			},
-			"response": []
+					"name": "Delete Persona",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"Maria\",\r\n    \"apellido\":\"Casale\",\r\n    \"cuil\":\"24306719324\",\r\n    \"dni\":\"30671932\",\r\n    \"email\":\"agustinacasale2@gmail.com\",\r\n    \"telefono\":\"2615386644\",\r\n    \"fechaNac\":\"1984-04-12\",\r\n    \"titulo\":\"Tecnico Superior en Hoteleria\",\r\n    \"perfil\":\"Me encuentro en  busqueda laboral dentro del rubro de la hoteleria\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/persona/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"persona",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Create Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"user\":\"fsabatini\",\r\n    \"password\":\"1254231\",\r\n    \"rol\":\"usuario\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/usuario/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/usuario/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/usuario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    \r\n   { \r\n\r\n        \"id\":1,\r\n        \"user\":\"acasale\",\r\n        \"password\":\"33333\",\r\n        \"rol\":\"usuarios\",\r\n        \"fechaAlta\":\"2023-03-13\",\r\n        \"fechaBaja\":\"1900-01-01\",\r\n        \"estado\":\"activo\",\r\n        \"persona\":{\r\n\r\n            \"id\":1\r\n\r\n        }\r\n\r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/usuario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    \r\n   { \r\n\r\n        \"id\":1,\r\n        \"user\":\"acasale\",\r\n        \"password\":\"33333\",\r\n        \"rol\":\"usuarios\",\r\n        \"fechaAlta\":\"2023-03-13\",\r\n        \"fechaBaja\":\"1900-01-01\",\r\n        \"estado\":\"activo\",\r\n        \"persona\":{\r\n\r\n            \"id\":1\r\n\r\n        }\r\n\r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/usuario/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne Usuario X idPersona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/usuario/persona/usuarios/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"usuario",
+								"persona",
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Domicilio",
+			"item": [
+				{
+					"name": "Create Domicilio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"calle\":\"25 de mayo\",\r\n    \"numero\":\"652\",\r\n    \"localidad\":\"ciudad\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/domicilio/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"domicilio",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Domicilio",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"calle\":\"25 de mayo\",\r\n    \"numero\":\"652\",\r\n    \"localidad\":\"ciudad\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/domicilio/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"domicilio",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne Domicilio",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"calle\":\"25 de mayo\",\r\n    \"numero\":\"652\",\r\n    \"localidad\":\"ciudad\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/domicilio/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"domicilio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Domicilio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"calle\":\"Martin Rodriguez\",\r\n    \"numero\":\"50\",\r\n    \"localidad\":\"Guaymallen\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/domicilio/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"domicilio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Domicilio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"calle\":\"Martin Rodriguez\",\r\n    \"numero\":\"50\",\r\n    \"localidad\":\"Guaymallen\",\r\n    \"provincia\":\"Mendoza\",\r\n    \"pais\":\"Argentina\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/domicilio/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"domicilio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/domicilio/persona/domicilio/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"domicilio",
+								"persona",
+								"domicilio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne Domicilio X Id_Persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/domicilio/persona/domicilio/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"domicilio",
+								"persona",
+								"domicilio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Imagen",
+			"item": [
+				{
+					"name": "Create Imagen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"fotoPerfil\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\\\\Proyecto_Web_Portfolio\\\\Documents\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/imagen/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"imagen",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Imagen",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"fotoPerfil\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\\\\Proyecto_Web_Portfolio\\\\Documents\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/imagen/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"imagen",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne Imagen",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"fotoPerfil\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\\\\Proyecto_Web_Portfolio\\\\Documents\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/imagen/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"imagen",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Imagen",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"fotoPortada\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/imagen/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"imagen",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Imagen",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"fotoPortada\",\r\n    \"ruta\":\"C:\\\\Users\\\\fsabatini\\\\Desktop\\\\Proyecto_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/imagen/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"imagen",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Imagenes X id_Persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/imagen/persona/imagenes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"imagen",
+								"persona",
+								"imagenes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RedSocial",
+			"item": [
+				{
+					"name": "Create RedSocial",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"github\",\r\n    \"link\":\"https://github.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/redSocial/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"redSocial",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll RedSocial",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"github\",\r\n    \"link\":\"https://github.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/redSocial/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"redSocial",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne RedSocial",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"github\",\r\n    \"link\":\"https://github.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/redSocial/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"redSocial",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update RedSocial",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"linkedin\",\r\n    \"link\":\"https://linkedin.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/redSocial/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"redSocial",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete RedSocial",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"linkedin\",\r\n    \"link\":\"https://linkedin.com/FedeConciencia/Proyecto_Web_Portfolio\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/redSocial/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"redSocial",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll RedSocial X id_Persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/redSocial/persona/redes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"redSocial",
+								"persona",
+								"redes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Idioma",
+			"item": [
+				{
+					"name": "Create Idioma",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"ingles\",\r\n    \"nivel\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/idioma/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"idioma",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Idioma",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"ingles\",\r\n    \"nivel\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/idioma/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"idioma",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne Idioma",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"ingles\",\r\n    \"nivel\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/idioma/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"idioma",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Idioma",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"Frances\",\r\n    \"nivel\":4,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/idioma/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"idioma",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Idioma",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/Idioma/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"Idioma",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Idioma X id_Persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/idioma/persona/idiomas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"idioma",
+								"persona",
+								"idiomas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DetalleIdioma",
+			"item": [
+				{
+					"name": "Create DetalleIdioma",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleIdioma/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleIdioma",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll DetalleIdioma",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleIdioma/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleIdioma",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne DetalleIdioma",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleIdioma/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleIdioma",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update DetalleIdioma",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleIdioma/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleIdioma",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete DetalleIdioma",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n        \"id\":1\r\n    },\r\n    \"idioma\":{\r\n        \"id\":1\r\n    }\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleIdioma/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleIdioma",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProSkill",
+			"item": [
+				{
+					"name": "Create ProSkill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"Java\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/proSkill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"proSkill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll ProSkill",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"Java\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/proSkill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"proSkill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne ProSkill",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"Java\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/proSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"proSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update ProSkill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"JavaScript\",\r\n    \"nivel\":4,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/proSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"proSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete ProSkill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/proSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"proSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll ProSkill X id_Persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/proSkill/persona/proSkills/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"proSkill",
+								"persona",
+								"proSkills",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DetalleProSkill",
+			"item": [
+				{
+					"name": "Create DetalleProSkill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleProSkill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleProSkill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll DetalleProSkill",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleProSkill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleProSkill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne DetalleProSkill",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleProSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleProSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update DetalleProSkill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleProSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleProSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete DetalleProSkill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"proSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detalleProSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detalleProSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PersonaSkill",
+			"item": [
+				{
+					"name": "Create PersonalSkill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"trabajo en equipo\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/personalSkill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personalSkill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll PersonalSkill",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"trabajo en equipo\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/personalSkill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personalSkill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne PersonalSkill",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\":\"trabajo en equipo\",\r\n    \"nivel\":3,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/personalSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personalSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update PersonalSkill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"desarollo\",\r\n    \"nivel\":2,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/personalSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personalSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete PersonalSkill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"nombre\":\"desarollo\",\r\n    \"nivel\":2,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/personalSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personalSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DetallePersonaSkill",
+			"item": [
+				{
+					"name": "Create DetallePersonalSkill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detallePersSkill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detallePersSkill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll DetallePersonalSkill",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detallePersSkill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detallePersSkill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne DetallePersonalSkill",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detallePersSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detallePersSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update DetallePersonalSkill",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detallePersSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detallePersSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete DetallePersonalSkill",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    },\r\n    \"personalSkill\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/detallePersSkill/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"detallePersSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FormacionAcademica",
+			"item": [
+				{
+					"name": "Create FormacionAcademica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formAcademic/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formAcademic",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll FormacionAcademica",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formAcademic/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formAcademic",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne FormacionAcademica",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formAcademic/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formAcademic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update FormacionAcademica",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formAcademic/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formAcademic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete FormacionAcademica",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"institucion\":\"Escuela de Comercio Martin Zapata\",\r\n    \"titulo\":\"Produccion de Bienes y Servicios\",\r\n    \"descripcion\":\"Estudios Secundarios UNCuyo\",\r\n    \"fechaInicio\":\"1998-03-13\",\r\n    \"fechaFin\":\"2002-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formAcademic/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formAcademic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FormacionComplementaria",
+			"item": [
+				{
+					"name": "Create FormacionComplementaria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\r\n    \"institucion\":\"Curso Full Stack Web\",\r\n    \"titulo\":\"Full Stack Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo full stack\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formComplement/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formComplement",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll FormacionComplementaria",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\r\n    \"institucion\":\"Curso Full Stack Web\",\r\n    \"titulo\":\"Full Stack Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo full stack\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formComplement/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formComplement",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne FormacionComplementaria",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\r\n    \"institucion\":\"Curso Full Stack Web\",\r\n    \"titulo\":\"Full Stack Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo full stack\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formComplement/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formComplement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update FormacionComplementaria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"institucion\":\"Curso Css\",\r\n    \"titulo\":\"Css Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo css\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formComplement/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formComplement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete FormacionComplementaria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"institucion\":\"Curso Css\",\r\n    \"titulo\":\"Css Trainee\",\r\n    \"descripcion\":\"curso nivel trainee desarrollo css\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/formComplement/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formComplement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ExperienciaLaboral",
+			"item": [
+				{
+					"name": "Create ExperienciaLaboral",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"empresa\":\"Eci Emergencias Medicas\",\r\n    \"puesto\":\"Comercial\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/expLaboral/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"expLaboral",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll ExperienciaLaboral",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"empresa\":\"Eci Emergencias Medicas\",\r\n    \"puesto\":\"Comercial\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/expLaboral/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"expLaboral",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne ExperienciaLaboral",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n    \"empresa\":\"Eci Emergencias Medicas\",\r\n    \"puesto\":\"Comercial\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/expLaboral/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"expLaboral",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update ExperienciaLaboral",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"empresa\":\"IPC Piscinas\",\r\n    \"puesto\":\"Atencion al Cliente\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/expLaboral/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"expLaboral",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete ExperienciaLaboral",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"empresa\":\"IPC Piscinas\",\r\n    \"puesto\":\"Atencion al Cliente\",\r\n    \"fechaInicio\":\"2022-03-13\",\r\n    \"fechaFin\":\"2023-11-17\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"persona\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/expLaboral/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"expLaboral",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll ExpLab X id_Persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/expLaboral/persona/experienciasLab/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"expLaboral",
+								"persona",
+								"experienciasLab",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DescripcionLaboral",
+			"item": [
+				{
+					"name": "Create DescripcionLaboral",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\r\n    \"descripcion\":\"Desarrollo Full Stack Web\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/descripcionLab/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"descripcionLab",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll DescripcionLaboral",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\r\n    \"descripcion\":\"Desarrollo Full Stack Web\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/descripcionLab/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"descripcionLab",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne DescripcionLaboral",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\r\n    \"descripcion\":\"Desarrollo Full Stack Web\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/descripcionLab/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"descripcionLab",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update DescripcionLaboral",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"descripcion\":\"Venta directa de items\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/descripcionLab/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"descripcionLab",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete DescripcionLaboral",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"id\":1,\r\n    \"descripcion\":\"Venta directa de items\",\r\n    \"fechaAlta\":\"2023-03-13\",\r\n    \"fechaBaja\":\"1900-01-01\",\r\n    \"estado\":\"activo\",\r\n    \"experienciaLaboral\":{\r\n\r\n        \"id\":1\r\n\r\n    }\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/descripcionLab/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"descripcionLab",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

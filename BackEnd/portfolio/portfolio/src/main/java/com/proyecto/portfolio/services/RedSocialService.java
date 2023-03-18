@@ -118,4 +118,21 @@ public class RedSocialService implements BaseService<RedSocial> {
         
     }
     
+    @Transactional
+    public List<RedSocial> buscarRedSocial(Long id) throws Exception{
+        
+        try{
+            
+            List<RedSocial> lista = redSocialRepository.searchRedSocial(id);
+            
+            return lista;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

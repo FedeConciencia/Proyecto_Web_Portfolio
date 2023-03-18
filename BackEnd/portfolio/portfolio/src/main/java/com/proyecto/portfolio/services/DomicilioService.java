@@ -117,4 +117,21 @@ public class DomicilioService implements BaseService<Domicilio> {
         
     }
     
+    @Transactional
+    public Domicilio buscarDomicilio(Long id) throws Exception{
+        
+        try{
+            
+            Domicilio domicilio = domicilioRepository.searchDomicilio(id);
+            
+            return domicilio;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

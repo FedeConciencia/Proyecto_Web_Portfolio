@@ -8,4 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface DetalleIdiomaRepository extends JpaRepository<DetalleIdioma, Long> {
     
+    
+
 }

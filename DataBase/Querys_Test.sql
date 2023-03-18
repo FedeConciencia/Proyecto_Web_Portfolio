@@ -6,8 +6,28 @@ use proyecto_portfolio;
 
 #---------------------------------------
 
-#Query Nativo para obtener por Id_Persona Experiencia_Laboral =>
-Select ex.* from experiencia_laboral as ex inner join persona as p on ex.id_persona = p.id;
+#Query Nativo para obtener por Id_Persona un Usuario (1:1) =>
+Select u.* from usuario as u inner join persona as p on u.id_persona = p.id where p.id = 1;
+
+#Query Nativo para obtener por Id_Persona un Domicilio (1:1)=>
+Select d.* from domicilio as d inner join persona as p on d.id_persona = p.id where p.id = 1;
+
+#Query Nativo para obtener por Id_Persona una Lista Imagenes (1:N)=>
+Select i.* from imagen as i inner join persona as p on i.id_persona = p.id where p.id = 1;
+
+#Query Nativo para obtener por Id_Persona una Lista de Idiomas (N:N)=>
+Select i.* from idioma as i inner join detalle_idioma as d on d.id_idioma = i.id inner join persona as p on p.id = d.id_persona where p.id = 1;
+
+#Query Nativo para obtener por Id_Persona una Lista RedSocial (1:N)=>
+Select r.* from red_social as r inner join persona as p on r.id_persona = p.id where p.id = 1;
+
+#Query Nativo para obtener por Id_Persona una Lista de ProSkill (N:N)=>
+Select s.* from pro_skill as s inner join detalle_pro_skill as d on d.id_pro_skill = s.id inner join persona as p on p.id = d.id_pro_skill where p.id = 1;
+
+#Query Nativo para obtener por Id_Persona una Lista Experiencia_Laboral (1:N) =>
+Select ex.* from experiencia_laboral as ex inner join persona as p on ex.id_persona = p.id where p.id = 1;
+
+
 
 #---------------------------------------
 

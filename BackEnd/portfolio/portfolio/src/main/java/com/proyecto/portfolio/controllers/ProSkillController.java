@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -84,7 +85,7 @@ public class ProSkillController {
         
     }
     
-    
+    @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable Long id){
         
         try{
@@ -99,6 +100,22 @@ public class ProSkillController {
         
         
     }
+    
+    @GetMapping("/persona/proSkills/{id}")
+    public ResponseEntity<?> getAllProSkill(@PathVariable Long id){
+        
+        try{
+            
+            return ResponseEntity.status(HttpStatus.OK).body(proSkillService.buscarProSkills(id));
+            
+        }catch(Exception e){
+            
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por Favor intente mas tarde.\"}" + e.getMessage());
+            
+        }
+        
+    }    
+
     
     
     

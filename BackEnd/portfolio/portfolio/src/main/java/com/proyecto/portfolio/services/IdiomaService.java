@@ -117,4 +117,21 @@ public class IdiomaService implements BaseService<Idioma> {
         
     }
     
+    @Transactional
+    public List<Idioma> buscarIdioma(Long id) throws Exception{
+        
+        try{
+            
+            List<Idioma> lista = idiomaRepository.searchIdioma(id);
+            
+            return lista;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

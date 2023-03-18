@@ -117,4 +117,21 @@ public class ProSkillService implements BaseService<ProSkill> {
         
     }
     
+    @Transactional
+    public List<ProSkill> buscarProSkills(Long id) throws Exception{
+        
+        try{
+            
+            List<ProSkill> lista = proSkillRepository.searchProSkill(id);
+            
+            return lista;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

@@ -117,4 +117,22 @@ public class UsuarioService implements BaseService<Usuario> {
         
     }
     
+    
+    @Transactional
+    public Usuario buscarUsuario(Long id) throws Exception{
+        
+        try{
+            
+            Usuario usuario = usuarioRepository.searchUsuario(id);
+            
+            return usuario;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

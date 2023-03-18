@@ -117,4 +117,22 @@ public class ImagenService implements BaseService<Imagen> {
         
     }
     
+    
+    @Transactional
+    public List<Imagen> buscarImagen(Long id) throws Exception{
+        
+        try{
+            
+            List<Imagen> lista = imagenRepository.searchImagen(id);
+            
+            return lista;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }
