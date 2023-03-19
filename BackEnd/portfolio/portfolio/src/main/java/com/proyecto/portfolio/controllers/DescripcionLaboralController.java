@@ -100,4 +100,19 @@ public class DescripcionLaboralController {
         
     }
     
+    @GetMapping("/experiencia/descripciones/{id}")
+    public ResponseEntity<?> getAllDescripciones(@PathVariable Long id){
+        
+        try{
+            
+            return ResponseEntity.status(HttpStatus.OK).body(descLabService.buscarDescripciones(id));
+            
+        }catch(Exception e){
+            
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por Favor intente mas tarde.\"}" + e.getMessage());
+            
+        }
+        
+    }
+    
 }

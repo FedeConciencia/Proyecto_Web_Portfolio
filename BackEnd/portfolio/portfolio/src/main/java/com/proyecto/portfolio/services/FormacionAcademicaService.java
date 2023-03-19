@@ -117,4 +117,21 @@ public class FormacionAcademicaService implements BaseService<FormacionAcademica
         
     }
     
+    @Transactional
+    public List<FormacionAcademica> buscarFormAcademicas(Long id) throws Exception{
+        
+        try{
+            
+            List<FormacionAcademica> lista = formAcademicRepo.searchFormAcademicas(id);
+            
+            return lista;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

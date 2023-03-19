@@ -117,4 +117,21 @@ public class FormacionComplementariaService implements BaseService<FormacionComp
         
     }
     
+    @Transactional
+    public List<FormacionComplementaria> buscarFormComplementarias(Long id) throws Exception{
+        
+        try{
+            
+            List<FormacionComplementaria> lista = formComplementRepo.searchFormComplementaria(id);
+            
+            return lista;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

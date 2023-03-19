@@ -100,4 +100,19 @@ public class PersonalSkillController {
         
     }
     
+    @GetMapping("/persona/personalSkills/{id}")
+    public ResponseEntity<?> getAllPersonalSkill(@PathVariable Long id){
+        
+        try{
+            
+            return ResponseEntity.status(HttpStatus.OK).body(personalSkillService.buscarPersonalSkills(id));
+            
+        }catch(Exception e){
+            
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por Favor intente mas tarde.\"}" + e.getMessage());
+            
+        }
+        
+    }    
+    
 }

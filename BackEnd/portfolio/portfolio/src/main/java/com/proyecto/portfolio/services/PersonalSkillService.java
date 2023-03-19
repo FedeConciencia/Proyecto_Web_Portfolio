@@ -118,4 +118,21 @@ public class PersonalSkillService implements BaseService<PersonalSkill> {
         
     }
     
+    @Transactional
+    public List<PersonalSkill> buscarPersonalSkills(Long id) throws Exception{
+        
+        try{
+            
+            List<PersonalSkill> lista = personalSkillRepository.searchPersonalSkill(id);
+            
+            return lista;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

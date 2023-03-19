@@ -118,4 +118,21 @@ public class DescripcionLaboralService implements BaseService<DescripcionLaboral
         
     }
     
+    @Transactional
+    public List<DescripcionLaboral> buscarDescripciones(Long id) throws Exception{
+        
+        try{
+            
+            List<DescripcionLaboral> lista = descripcionRepository.searchDescripciones(id);
+            
+            return lista;
+            
+        }catch(Exception e){
+            
+            throw new Exception(e.getMessage());
+            
+        }
+        
+    }
+    
 }

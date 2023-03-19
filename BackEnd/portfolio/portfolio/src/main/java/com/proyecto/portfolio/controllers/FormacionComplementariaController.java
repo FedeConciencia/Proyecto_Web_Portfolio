@@ -100,4 +100,19 @@ public class FormacionComplementariaController {
         
     }
     
+    @GetMapping("/persona/formComplementarias/{id}")
+    public ResponseEntity<?> getAllFormComplementarias(@PathVariable Long id){
+        
+        try{
+            
+            return ResponseEntity.status(HttpStatus.OK).body(formComplementService.buscarFormComplementarias(id));
+            
+        }catch(Exception e){
+            
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por Favor intente mas tarde.\"}" + e.getMessage());
+            
+        }
+        
+    }    
+    
 }

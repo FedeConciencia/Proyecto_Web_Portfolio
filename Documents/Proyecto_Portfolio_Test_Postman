@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ab41f4d8-a6e1-4791-baa2-36a22c8a541f",
+		"_postman_id": "e53e93d0-8a05-475c-bca4-d9364dc3b829",
 		"name": "Proyecto_Portfolio",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -360,7 +360,10 @@
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": []
 				},
@@ -1127,7 +1130,10 @@
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": []
 				},
@@ -1663,7 +1669,7 @@
 			]
 		},
 		{
-			"name": "PersonaSkill",
+			"name": "PersonalSkill",
 			"item": [
 				{
 					"name": "Create PersonalSkill",
@@ -1815,6 +1821,37 @@
 								"api",
 								"v1",
 								"personalSkill",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll PersonalSkill X id_Persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/personalSkill/persona/personalSkills/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personalSkill",
+								"persona",
+								"personalSkills",
 								"1"
 							]
 						}
@@ -2142,6 +2179,29 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "GetAll FormAcademicas X id_Persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/formAcademic/persona/formAcademicas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formAcademic",
+								"persona",
+								"formAcademicas",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -2298,6 +2358,29 @@
 								"api",
 								"v1",
 								"formComplement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll FormComplementarias X id_Persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/formComplement/persona/formComplementarias/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"formComplement",
+								"persona",
+								"formComplementarias",
 								"1"
 							]
 						}
@@ -2469,7 +2552,10 @@
 					"name": "New Request",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": []
 				},
@@ -2651,6 +2737,29 @@
 								"api",
 								"v1",
 								"descripcionLab",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll DescripcionesLab X id_Experiencia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/descripcionLab/experiencia/descripciones/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"descripcionLab",
+								"experiencia",
+								"descripciones",
 								"1"
 							]
 						}

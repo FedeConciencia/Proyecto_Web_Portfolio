@@ -24,9 +24,20 @@ Select r.* from red_social as r inner join persona as p on r.id_persona = p.id w
 #Query Nativo para obtener por Id_Persona una Lista de ProSkill (N:N)=>
 Select s.* from pro_skill as s inner join detalle_pro_skill as d on d.id_pro_skill = s.id inner join persona as p on p.id = d.id_pro_skill where p.id = 1;
 
+#Query Nativo para obtener por Id_Persona una Lista de PersonalSkill (N:N)=>
+Select s.* from personal_skill as s inner join detalle_personal_skill as d on d.id_personal_skill = s.id inner join persona as p on p.id = d.id_personal_skill where p.id = 1;
+
+#Query Nativo para obtener por Id_Persona una FormacionAcademica (1:N)=>
+Select f.* from formacion_academica as f inner join persona as p on f.id_persona = p.id where p.id = 1;
+
+#Query Nativo para obtener por Id_Persona una FormacionComplementaria (1:N)=>
+Select f.* from formacion_complementaria as f inner join persona as p on f.id_persona = p.id where p.id = 1;
+
 #Query Nativo para obtener por Id_Persona una Lista Experiencia_Laboral (1:N) =>
 Select ex.* from experiencia_laboral as ex inner join persona as p on ex.id_persona = p.id where p.id = 1;
 
+#Query Nativo para obtener por Id_ExperienciaLab una Descripcion Laboral  (1:N)=>
+Select d.* from descripcion_laboral as d inner join experiencia_laboral as e on d.id_experiencia = e.id where e.id = 1;
 
 
 #---------------------------------------
